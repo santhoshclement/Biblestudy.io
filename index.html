@@ -336,6 +336,40 @@ h1{font-size:clamp(1.4rem,3vw,2.2rem)!important;color:#3d2b19!important;text-sha
 .pill{background:#efe1c9!important;color:#6f4e25!important}.copy-btn,
 .card-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end;}.source-status{font-size:.86rem;color:#746550;padding:6px 2px;grid-column:1/-1;}@media print{.verse-card{break-inside:avoid!important}}
 
+
+.testament-group{
+  display:flex;
+  flex-direction:column;
+  gap:7px;
+  margin-top:10px;
+  padding-top:10px;
+  border-top:1px solid var(--rule, #e5d4b7);
+}
+.testament-group h3{
+  margin:0 0 4px;
+  font-family:"Noto Serif Tamil", serif;
+  font-size:.92rem;
+  color:#7a4e18;
+  letter-spacing:.02em;
+}
+@media (max-width: 980px){
+  .testament-group{
+    flex-direction:row;
+    align-items:center;
+    overflow-x:auto;
+    border-top:0;
+    padding-top:0;
+    margin-top:0;
+  }
+  .testament-group h3{
+    flex:0 0 auto;
+    padding:9px 10px;
+    border-radius:999px;
+    background:#efe1c9;
+    white-space:nowrap;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -353,35 +387,16 @@ h1{font-size:clamp(1.4rem,3vw,2.2rem)!important;color:#3d2b19!important;text-sha
 </header>
 <main class="wrap"><div class="app-shell"><aside class="sidebar"><h2>புத்தகங்கள்</h2><p>புத்தகத்தைத் தேர்வு செய்து வசனங்களை வாசிக்கவும்.</p><nav aria-label="Book navigation" class="book-nav">
 <button class="book-chip active" data-book="all">அனைத்தும்</button>
-<button class="book-chip" data-book="வெளிப்படுத்தல்">வெளிப்படுத்தல்</button>
-<button class="book-chip" data-book="ஏசாயா">ஏசாயா</button>
-<!-- <button class="book-chip" data-book="நாம் வாழ்வதற்கு">நாம் வாழ்வதற்கு</button> -->
-<button class="book-chip" data-book="ரோமர்">ரோமர்</button>
-<button class="book-chip" data-book="அபக்கூக்">அபக்கூக்</button>
-<button class="book-chip" data-book="யோவான்">யோவான்</button>
-<button class="book-chip" data-book="எபிரேயர்">எபிரேயர்</button>
-<button class="book-chip" data-book="யாக்கோபு">யாக்கோபு</button>
-<button class="book-chip" data-book="உபாகமம்">உபாகமம்</button>
-<button class="book-chip" data-book="1 கொரிந்தியர்">1 கொரிந்தியர்</button>
-<button class="book-chip" data-book="சங்கீதம்">சங்கீதம்</button>
-<button class="book-chip" data-book="லூக்கா">லூக்கா</button>
-<button class="book-chip" data-book="மத்தேயு">மத்தேயு</button>
-<button class="book-chip" data-book="சகரியா">சகரியா</button>
-<button class="book-chip" data-book="நீதிமொழிகள்">நீதிமொழிகள்</button>
-<button class="book-chip" data-book="பிலிப்பியர்">பிலிப்பியர்</button>
-<button class="book-chip" data-book="2 கொரிந்தியர்">2 கொரிந்தியர்</button>
-<button class="book-chip" data-book="2 இராஜாக்கள்">2 இராஜாக்கள்</button>
-<button class="book-chip" data-book="யோவேல்">யோவேல்</button>
-<button class="book-chip" data-book="1 நாளாகமம்">1 நாளாகமம்</button>
-<button class="book-chip" data-book="2 நாளாகமம்">2 நாளாகமம்</button>
-<button class="book-chip" data-book="மீகா">மீகா</button>
-<button class="book-chip" data-book="கொலோசெயர்">கொலோசெயர்</button>
-<button class="book-chip" data-book="பிரசங்கி">பிரசங்கி</button>
-<button class="book-chip" data-book="எஸ்றா">எஸ்றா</button>
-<button class="book-chip" data-book="ஓசியா">ஓசியா</button>
-<button class="book-chip" data-book="யோபு">யோபு</button>
-<button class="book-chip" data-book="புலம்பல்">புலம்பல்</button>
-<button class="book-chip" data-book="ஆமோஸ்">ஆமோஸ்</button>
+
+<div class="testament-group">
+  <h3>பழைய ஏற்பாடு</h3>
+  <button class="book-chip" data-book="உபாகமம்">உபாகமம்</button><button class="book-chip" data-book="2 இராஜாக்கள்">2 இராஜாக்கள்</button><button class="book-chip" data-book="1 நாளாகமம்">1 நாளாகமம்</button><button class="book-chip" data-book="2 நாளாகமம்">2 நாளாகமம்</button><button class="book-chip" data-book="எஸ்றா">எஸ்றா</button><button class="book-chip" data-book="யோபு">யோபு</button><button class="book-chip" data-book="சங்கீதம்">சங்கீதம்</button><button class="book-chip" data-book="நீதிமொழிகள்">நீதிமொழிகள்</button><button class="book-chip" data-book="பிரசங்கி">பிரசங்கி</button><button class="book-chip" data-book="ஏசாயா">ஏசாயா</button><button class="book-chip" data-book="புலம்பல்">புலம்பல்</button><button class="book-chip" data-book="ஓசியா">ஓசியா</button><button class="book-chip" data-book="யோவேல்">யோவேல்</button><button class="book-chip" data-book="ஆமோஸ்">ஆமோஸ்</button><button class="book-chip" data-book="மீகா">மீகா</button><button class="book-chip" data-book="அபக்கூக்">அபக்கூக்</button><button class="book-chip" data-book="சகரியா">சகரியா</button>
+</div>
+
+<div class="testament-group">
+  <h3>புதிய ஏற்பாடு</h3>
+  <button class="book-chip" data-book="மத்தேயு">மத்தேயு</button><button class="book-chip" data-book="லூக்கா">லூக்கா</button><button class="book-chip" data-book="யோவான்">யோவான்</button><button class="book-chip" data-book="ரோமர்">ரோமர்</button><button class="book-chip" data-book="1 கொரிந்தியர்">1 கொரிந்தியர்</button><button class="book-chip" data-book="2 கொரிந்தியர்">2 கொரிந்தியர்</button><button class="book-chip" data-book="பிலிப்பியர்">பிலிப்பியர்</button><button class="book-chip" data-book="கொலோசெயர்">கொலோசெயர்</button><button class="book-chip" data-book="எபிரேயர்">எபிரேயர்</button><button class="book-chip" data-book="யாக்கோபு">யாக்கோபு</button><button class="book-chip" data-book="வெளிப்படுத்தல்">வெளிப்படுத்தல்</button>
+</div>
 </nav></aside><section class="content-panel"><section aria-label="Search and filters" class="toolbar">
 <input class="control" id="search" placeholder="வசனம், புத்தகம் அல்லது வார்த்தை தேடுங்கள்..." type="search"/>
 <select class="control" id="category">
